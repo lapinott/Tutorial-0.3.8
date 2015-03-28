@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="glutil" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="lib/libglutilD.a" prefix_auto="0" extension_auto="0" />
+				<Option object_output="Debug" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option="-DWIN32" />
+					<Add option="-DDEBUG" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DMEMORY_DEBUGGING" />
+					<Add directory="include" />
+					<Add directory="source" />
+					<Add directory="../glload/include" />
+					<Add directory="../glm" />
+				</Compiler>
+				<Linker>
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="lib/libglutil.a" prefix_auto="0" extension_auto="0" />
+				<Option object_output="Release" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-Wall" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DRELEASE" />
+					<Add directory="include" />
+					<Add directory="source" />
+					<Add directory="../glload/include" />
+					<Add directory="../glm" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="include/glutil/Debug.h">
+		</Unit>
+		<Unit filename="include/glutil/glutil.h">
+		</Unit>
+		<Unit filename="include/glutil/MatrixStack.h">
+		</Unit>
+		<Unit filename="include/glutil/MousePoles.h">
+		</Unit>
+		<Unit filename="include/glutil/Shader.h">
+		</Unit>
+		<Unit filename="include/glutil/WindowPos.h">
+		</Unit>
+		<Unit filename="source/Debug.cpp">
+		</Unit>
+		<Unit filename="source/MatrixStack.cpp">
+		</Unit>
+		<Unit filename="source/MousePoles.cpp">
+		</Unit>
+		<Unit filename="source/Shader.cpp">
+		</Unit>
+		<Unit filename="source/WindowPos.cpp">
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
+

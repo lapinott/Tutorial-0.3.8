@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Tut 09 Basic Lighting" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="Tut 09 Basic LightingD.exe" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj/Debug/Tut 09 Basic Lighting" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option="-DTIXML_USE_STL" />
+					<Add option="-DFREEGLUT_STATIC" />
+					<Add option="-DWIN32" />
+					<Add option="-D_LIB" />
+					<Add option="-DFREEGLUT_LIB_PRAGMAS=0" />
+					<Add option="-DDEBUG" />
+					<Add option="-D_DEBUG" />
+					<Add directory="../framework" />
+					<Add directory="../glsdk/glload/include" />
+					<Add directory="../glsdk/glimg/include" />
+					<Add directory="../glsdk/glm" />
+					<Add directory="../glsdk/glutil/include" />
+					<Add directory="../glsdk/glmesh/include" />
+					<Add directory="../glsdk/freeglut/include" />
+				</Compiler>
+				<Linker>
+					<Add directory="../glsdk/glload/lib" />
+					<Add directory="../glsdk/glimg/lib" />
+					<Add directory="../glsdk/glutil/lib" />
+					<Add directory="../glsdk/glmesh/lib" />
+					<Add directory="../glsdk/freeglut/lib" />
+					<Add directory="../framework/lib" />
+					<Add library="frameworkD" />
+					<Add library="glloadD" />
+					<Add library="glimgD" />
+					<Add library="glutilD" />
+					<Add library="glmeshD" />
+					<Add library="freeglutD" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="user32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="Tut 09 Basic Lighting.exe" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj/Release/Tut 09 Basic Lighting" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-Wall" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option="-DTIXML_USE_STL" />
+					<Add option="-DFREEGLUT_STATIC" />
+					<Add option="-DWIN32" />
+					<Add option="-D_LIB" />
+					<Add option="-DFREEGLUT_LIB_PRAGMAS=0" />
+					<Add option="-DRELEASE" />
+					<Add option="-DNDEBUG" />
+					<Add directory="../framework" />
+					<Add directory="../glsdk/glload/include" />
+					<Add directory="../glsdk/glimg/include" />
+					<Add directory="../glsdk/glm" />
+					<Add directory="../glsdk/glutil/include" />
+					<Add directory="../glsdk/glmesh/include" />
+					<Add directory="../glsdk/freeglut/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="../glsdk/glload/lib" />
+					<Add directory="../glsdk/glimg/lib" />
+					<Add directory="../glsdk/glutil/lib" />
+					<Add directory="../glsdk/glmesh/lib" />
+					<Add directory="../glsdk/freeglut/lib" />
+					<Add directory="../framework/lib" />
+					<Add library="framework" />
+					<Add library="glload" />
+					<Add library="glimg" />
+					<Add library="glutil" />
+					<Add library="glmesh" />
+					<Add library="freeglut" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="user32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="Basic Lighting.cpp">
+		</Unit>
+		<Unit filename="data/DirVertexLighting_PCN.vert">
+		</Unit>
+		<Unit filename="data/DirVertexLighting_PN.vert">
+		</Unit>
+		<Unit filename="data/ColorPassthrough.frag">
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
+

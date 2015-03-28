@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="framework" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="lib/libframeworkD.a" prefix_auto="0" extension_auto="0" />
+				<Option object_output="lib/Debug" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option="-DTIXML_USE_STL" />
+					<Add option="-DFREEGLUT_STATIC" />
+					<Add option="-DWIN32" />
+					<Add option="-D_LIB" />
+					<Add option="-DFREEGLUT_LIB_PRAGMAS=0" />
+					<Add option="-DDEBUG" />
+					<Add option="-D_DEBUG" />
+					<Add directory="." />
+					<Add directory="../glsdk/glload/include" />
+					<Add directory="../glsdk/glimg/include" />
+					<Add directory="../glsdk/glm" />
+					<Add directory="../glsdk/glutil/include" />
+					<Add directory="../glsdk/glmesh/include" />
+					<Add directory="../glsdk/freeglut/include" />
+				</Compiler>
+				<Linker>
+					<Add directory="../glsdk/glload/lib" />
+					<Add directory="../glsdk/glimg/lib" />
+					<Add directory="../glsdk/glutil/lib" />
+					<Add directory="../glsdk/glmesh/lib" />
+					<Add directory="../glsdk/freeglut/lib" />
+					<Add library="glloadD" />
+					<Add library="glimgD" />
+					<Add library="glutilD" />
+					<Add library="glmeshD" />
+					<Add library="freeglutD" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="lib/libframework.a" prefix_auto="0" extension_auto="0" />
+				<Option object_output="lib/Release" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-Wall" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option="-DTIXML_USE_STL" />
+					<Add option="-DFREEGLUT_STATIC" />
+					<Add option="-DWIN32" />
+					<Add option="-D_LIB" />
+					<Add option="-DFREEGLUT_LIB_PRAGMAS=0" />
+					<Add option="-DRELEASE" />
+					<Add option="-DNDEBUG" />
+					<Add directory="." />
+					<Add directory="../glsdk/glload/include" />
+					<Add directory="../glsdk/glimg/include" />
+					<Add directory="../glsdk/glm" />
+					<Add directory="../glsdk/glutil/include" />
+					<Add directory="../glsdk/glmesh/include" />
+					<Add directory="../glsdk/freeglut/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="../glsdk/glload/lib" />
+					<Add directory="../glsdk/glimg/lib" />
+					<Add directory="../glsdk/glutil/lib" />
+					<Add directory="../glsdk/glmesh/lib" />
+					<Add directory="../glsdk/freeglut/lib" />
+					<Add library="glload" />
+					<Add library="glimg" />
+					<Add library="glutil" />
+					<Add library="glmesh" />
+					<Add library="freeglut" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="framework.cpp">
+		</Unit>
+		<Unit filename="Mesh.cpp">
+		</Unit>
+		<Unit filename="Scene.cpp">
+		</Unit>
+		<Unit filename="Timer.cpp">
+		</Unit>
+		<Unit filename="directories.h">
+		</Unit>
+		<Unit filename="framework.h">
+		</Unit>
+		<Unit filename="framework_all.h">
+		</Unit>
+		<Unit filename="Interpolators.h">
+		</Unit>
+		<Unit filename="Mesh.h">
+		</Unit>
+		<Unit filename="MousePole.h">
+		</Unit>
+		<Unit filename="rapidxml_helpers.h">
+		</Unit>
+		<Unit filename="Scene.h">
+		</Unit>
+		<Unit filename="SceneBinders.h">
+		</Unit>
+		<Unit filename="Timer.h">
+		</Unit>
+		<Unit filename="UniformBlockArray.h">
+		</Unit>
+		<Unit filename="rapidxml.hpp">
+		</Unit>
+		<Unit filename="rapidxml_iterators.hpp">
+		</Unit>
+		<Unit filename="rapidxml_print.hpp">
+		</Unit>
+		<Unit filename="rapidxml_utils.hpp">
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
+

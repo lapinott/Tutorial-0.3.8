@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="glimg" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="lib/libglimgD.a" prefix_auto="0" extension_auto="0" />
+				<Option object_output="Debug" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option="-DWIN32" />
+					<Add option="-DDEBUG" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DMEMORY_DEBUGGING" />
+					<Add directory="include" />
+					<Add directory="source" />
+					<Add directory="../glload/include" />
+				</Compiler>
+				<Linker>
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="lib/libglimg.a" prefix_auto="0" extension_auto="0" />
+				<Option object_output="Release" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-Wall" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_SCL_SECURE_NO_WARNINGS" />
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DRELEASE" />
+					<Add directory="include" />
+					<Add directory="source" />
+					<Add directory="../glload/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="include/glimg/DdsLoader.h">
+		</Unit>
+		<Unit filename="include/glimg/glimg.h">
+		</Unit>
+		<Unit filename="include/glimg/ImageCreator.h">
+		</Unit>
+		<Unit filename="include/glimg/ImageCreatorExceptions.h">
+		</Unit>
+		<Unit filename="include/glimg/ImageFormat.h">
+		</Unit>
+		<Unit filename="include/glimg/ImageSet.h">
+		</Unit>
+		<Unit filename="include/glimg/Loaders.h">
+		</Unit>
+		<Unit filename="include/glimg/StbLoader.h">
+		</Unit>
+		<Unit filename="include/glimg/TestLoader.h">
+		</Unit>
+		<Unit filename="include/glimg/TextureGenerator.h">
+		</Unit>
+		<Unit filename="include/glimg/TextureGeneratorExceptions.h">
+		</Unit>
+		<Unit filename="source/DdsLoaderInt.h">
+		</Unit>
+		<Unit filename="source/ImageSetImpl.h">
+		</Unit>
+		<Unit filename="source/stb_image.h">
+		</Unit>
+		<Unit filename="source/Util.h">
+		</Unit>
+		<Unit filename="source/DdsLoader.cpp">
+		</Unit>
+		<Unit filename="source/ImageCreator.cpp">
+		</Unit>
+		<Unit filename="source/ImageFormat.cpp">
+		</Unit>
+		<Unit filename="source/ImageSet.cpp">
+		</Unit>
+		<Unit filename="source/ImageSetImpl.cpp">
+		</Unit>
+		<Unit filename="source/StbLoader.cpp">
+		</Unit>
+		<Unit filename="source/TestLoader.cpp">
+		</Unit>
+		<Unit filename="source/TextureGenerator.cpp">
+		</Unit>
+		<Unit filename="source/Util.cpp">
+		</Unit>
+		<Unit filename="source/stb_image.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="source/OldDdsFmtConv.inc">
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
+
