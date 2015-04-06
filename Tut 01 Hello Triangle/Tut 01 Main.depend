@@ -1,1 +1,100 @@
 # depslib dependency file v1.0
+1428279899 source:c:\users\julien\documents\github\gltut\tutorial 0.3.8\tut 01 hello triangle\tut1.cpp
+	<algorithm>
+	<iostream>
+	<string>
+	<vector>
+	<stdio.h>
+	<glload/gl_3_2_comp.h>
+	<GL/freeglut.h>
+
+1329267414 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\gl_3_2_comp.h
+	"_int_gl_type.h"
+	"_int_gl_exts.h"
+	"_int_gl_1_1.h"
+	"_int_gl_1_1_rem_3_1.h"
+	"_int_gl_1_2.h"
+	"_int_gl_1_2_rem_3_1.h"
+	"_int_gl_1_3.h"
+	"_int_gl_1_3_rem_3_1.h"
+	"_int_gl_1_4.h"
+	"_int_gl_1_4_rem_3_1.h"
+	"_int_gl_1_5.h"
+	"_int_gl_1_5_rem_3_1.h"
+	"_int_gl_2_0.h"
+	"_int_gl_2_0_rem_3_1.h"
+	"_int_gl_2_1.h"
+	"_int_gl_2_1_rem_3_1.h"
+	"_int_gl_3_0.h"
+	"_int_gl_3_0_rem_3_1.h"
+	"_int_gl_3_1.h"
+	"_int_gl_3_2.h"
+
+1329267414 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_type.h
+	<windows.h>
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1329267414 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_exts.h
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1329267413 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_1_1.h
+
+1329267413 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_1_1_rem_3_1.h
+
+1329267413 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_1_2.h
+
+1329267413 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_1_2_rem_3_1.h
+
+1329267413 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_1_3.h
+
+1329267413 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_1_3_rem_3_1.h
+
+1329267413 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_1_4.h
+
+1329267413 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_1_4_rem_3_1.h
+
+1329267413 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_1_5.h
+
+1329267413 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_1_5_rem_3_1.h
+
+1329267413 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_2_0.h
+
+1329267413 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_2_0_rem_3_1.h
+
+1329267413 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_2_1.h
+
+1329267413 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_2_1_rem_3_1.h
+
+1329267413 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_3_0.h
+
+1329267413 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_3_0_rem_3_1.h
+
+1329267413 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_3_1.h
+
+1329267413 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\glload\include\glload\_int_gl_3_2.h
+
+1066740114 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\freeglut\include\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1249933198 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\freeglut\include\gl\freeglut_std.h
+	<Windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1249933198 c:\users\julien\documents\github\gltut\tutorial 0.3.8\glsdk\freeglut\include\gl\freeglut_ext.h
+

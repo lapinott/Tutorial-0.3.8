@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Tutorial1">
+		<Project filename="../framework/framework.cbp" />
+		<Project filename="Tut 01 Main.cbp">
+			<Depends filename="../framework/framework.cbp" />
+		</Project>
+		<Project filename="../../../glfrm/glfrm1/glfrm1.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

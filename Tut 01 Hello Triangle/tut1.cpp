@@ -4,6 +4,7 @@
 
 
 #include <algorithm>
+#include <iostream>
 #include <string>
 #include <vector>
 #include <stdio.h>
@@ -79,6 +80,7 @@ const std::string strVertexShader(
 	"layout(location = 0) in vec4 position;\n"
 	"void main()\n"
 	"{\n"
+	"   //gl_Position = vec4(position.x - 0.5, position.y / 2, -0.5, 1.0f);\n"
 	"   gl_Position = position;\n"
 	"}\n"
 );
@@ -88,7 +90,7 @@ const std::string strFragmentShader(
 	"out vec4 outputColor;\n"
 	"void main()\n"
 	"{\n"
-	"   outputColor = vec4(1.0f, 1.0f, 1.0f, 1.0f);\n"
+	"   outputColor = vec4(0.5f, -2.0f, -0.1f, 1.0f);\n"
 	"}\n"
 );
 
@@ -105,9 +107,12 @@ void InitializeProgram()
 }
 
 const float vertexPositions[] = {
-	0.75f, 0.75f, 0.0f, 1.0f,
-	0.75f, -0.75f, 0.0f, 1.0f,
-	-0.75f, -0.75f, 0.0f, 1.0f,
+	1.f, 1.f, 0.0f, 1.0f,
+	1.f, -1.f, 0.0f, 1.0f,
+	-1.f, -1.f, 0.0f, 1.0f,
+	1.f, 1.f, 0.0f, 1.0f,
+	-1.f, 1.f, 0.0f, 1.0f,
+	-1.f, -1.f, 0.0f, 1.0f,
 };
 
 GLuint positionBufferObject;
@@ -138,8 +143,10 @@ void init()
 //If you need continuous updates of the screen, call glutPostRedisplay() at the end of the function.
 void display()
 {
-	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+	glClearColor(1.0f, 0.0f, 0.0f, 0.0f);
 	glClear(GL_COLOR_BUFFER_BIT);
+	//glutFullScreen();
+	//glutInitWindowSize(1024, 768);
 
 	glUseProgram(theProgram);
 
@@ -147,7 +154,7 @@ void display()
 	glEnableVertexAttribArray(0);
 	glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 0, 0);
 
-	glDrawArrays(GL_TRIANGLES, 0, 3);
+	glDrawArrays(GL_TRIANGLES, 0, 6);
 
 	glDisableVertexAttribArray(0);
 	glUseProgram(0);
@@ -159,7 +166,21 @@ void display()
 //This is an opportunity to call glViewport or glScissor to keep up with the change in size.
 void reshape (int w, int h)
 {
-	glViewport(0, 0, (GLsizei) w, (GLsizei) h);
+    //w = (int)((w + h) / 2);
+    int diff = std::abs(w-h);
+    int diffX = 0, diffY = 0;
+    if (w>h) {
+            w = h;
+            diffX = diff;
+    }
+    else if (h>w) {
+            h = w;
+            diffY = diff;
+    }
+
+	glViewport(diffX/2, diffY/2, (GLsizei) w, (GLsizei) h);
+	std::cout << diffX << " " << diffY << std::endl;
+	std::cout << h << " " << w << std::endl;
 }
 
 //Called whenever a key on the keyboard was pressed.
